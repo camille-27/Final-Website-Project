@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8">
+	<title>Comments</title>
+	<link rel="stylesheet" href="style.css">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <script src='script1.js'></script>
+	<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+       (function() {
+           emailjs.init("user_e11hQrNTm8gT1Lf3aKtQf");
+       })();
+    </script>
+	<script>
+	    function fbws(text){
+		var textarea = document.getElementById(text);
+		var regex = /(puta|gago|tangina|putangina|gagi|ogag|pucha|taena|leche|lintek|lechugas|kingina|pukingina|bwisit|bwiset|pakyu|pakshit|pakshet|ulol|tarantado|pokpok|putakte|takte|putragis|ampota|amputa|depota|bruha|bwakanang shit|pota|yawa|bwct|siraulo|punyeta|shunga|tanga|hindot|peste|piste|shuta|pokingina|hayop|potangena|putaena|putanginamo|shutacca|gaga|bobo|shet|ass|shitty|motherfucker|bitch|asshat|hell|bastard|slut|crap|fucked|fuck|shit|fuckshit|fuckingshit|bullshit|damn|damn it|dammit|fucking|piece of shit|asshole)/gi;
+		var clean = textarea.value.replace(regex,"***");
+        textarea.value = clean;
+        }		
+	</script>
+	<script>
+	   /**
+	       User ID user_e11hQrNTm8gT1Lf3aKtQf
+           Access Token
+		*/
+	</script>
+	<script>
+	    $('#btn').click(function(){
+		    swal({
+                title: "Thanks!",
+                text: "YThe comment has been sent to the website owner's email!",
+                icon: "success",
+				button: "OK",
+                });
+	</script>
+	<nav style="border-bottom: 3px solid #707070;">
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <i class="fas fa-bars"></i>
+        </label>
+        <label class="logo">ARTSTHETIC</label>
+            <ul>
+                <li><a href="website.html" target="_parent">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="#about-contact">About</a></li>
+                <li><a href="#about-contact">Contact</a></li>
+				<li><a href="comments.html">Comments</a></li>
+            </ul>
+    </nav>
+</head>
+<body>
+	<div class="comments">
+		<h1>COMMENTS</h1>
+    </div>
+	<div class="container">
+		<div class="contact-box">
+		    <h1 class="leave-comment">Leave your comment here</h1>
+			    <input type="text" id="fromName" placeholder="Name">
+				<input type="text" id="fromEmail" placeholder="Email">
+				<input type="text" id="date" placeholder="Date">
+				<textarea id="msg" onkeyup="fbws('msg')" placeholder="Add your comment here"></textarea>	
+				<button onclick='submitForm()' id="btn">Post Comment</button>
+		</div>
+	</div>
+	<footer id="about-contact">
+    <h1 class="footer-name">ARTSTHETIC</h1>
+        <p class="footer-about">This is an online store which sells art-related products. We offers various art supplies such as pen, markers, paints, and brushes at an affordable price. If you're interested in purchasing cheap art materials, then you can browse the website to see the different kinds of products we offer.</p>
+    <h2 class="footer-follow">CONTACT US ON:</h2>
+        <p class="aligncenter">
+        <img src="https://www.pinclipart.com/picdir/big/560-5604487_facebook-logo-png-white-facebook-logo-png-white.png" alt="facebook logo" class="footer-links" style="width:30px; height:30px; padding:0px 10px 10px 0px; "/>
+        <img src="https://www.nicepng.com/png/full/346-3465427_facebook-icon-twitter-icon-twitter-logo-white-box.png" alt="twitter logo" class="footer-links" style="width:30px; height:30px; padding:0px 10px 10px 0px;"/>
+        <img src="https://www.edigitalagency.com.au/wp-content/uploads/new-instagram-logo-white-border-icon-png-large.png" alt="instagram logo" class="footer-links" style="width:30px; height:30px; padding:0px 10px 10px 0px; "/>
+        <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/da5056e3-da67-4ecb-a7f0-9dfba254e40e/ddpribr-f16837f3-2840-406c-906e-90c2ae875d5e.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2RhNTA1NmUzLWRhNjctNGVjYi1hN2YwLTlkZmJhMjU0ZTQwZVwvZGRwcmlici1mMTY4MzdmMy0yODQwLTQwNmMtOTA2ZS05MGMyYWU4NzVkNWUucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.Cv1o28OmnSBUErr8VvRgvSYUrat1YFjdbVHUdOO8SLA" alt="gmail logo" class="footer-links" style="width:40px; height:30px; padding:0px 10px 10px 0px;"/>
+        </p>
+    </footer>
+</body>
+</html>
